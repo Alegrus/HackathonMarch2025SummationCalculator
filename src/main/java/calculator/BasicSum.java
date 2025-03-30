@@ -1,4 +1,4 @@
-package main;
+package calculator;
 
 /**
  * Class for the most basic summations E.G. sum from x=1 to 5 of 17

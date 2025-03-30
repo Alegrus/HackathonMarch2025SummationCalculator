@@ -1,5 +1,4 @@
-package test;
-import main.Summation;
+package calculator;
 import org.junit.Test;
 
 import java.util.LinkedList;

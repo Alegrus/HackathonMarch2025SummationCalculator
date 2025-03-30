@@ -1,4 +1,4 @@
-package main;
+package calculator;
 
 /**
  * Interface of the Sum classes

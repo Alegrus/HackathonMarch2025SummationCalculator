@@ -1,4 +1,4 @@
-package main;
+package calculator;
 
 import java.util.Objects;
 import java.util.Queue;
@@ -18,10 +18,6 @@ public class Value extends Summation implements ValueInterface {
     }
 
     public Value(String from, String to, Queue<String> val) {
-        super(from, to, val);
-    }
-
-    public Value(Queue<String> from, Queue<String> to, Queue<String> val) {
         super(from, to, val);
     }
 

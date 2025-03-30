@@ -1,4 +1,4 @@
-package main;
+package calculator;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -12,7 +12,7 @@ public class Main {
     }
 
     // Sets up and prints all available procedures
-    private static void setUpProcedures(HashMap<Integer, ProcedureContainer> procedures) {
+    static void setUpProcedures(HashMap<Integer, ProcedureContainer> procedures) {
         procedures.put(1, new ProcedureContainer(
                 1,
                 "Basic Sum e.g. sum from x=1 to 5 of 17",
@@ -29,7 +29,7 @@ public class Main {
     }
 
     // Checks if procedure given exists and runs it if so
-    private static void procedureInputHandler(int choice, HashMap<Integer, ProcedureContainer> procedures) {
+    static void procedureInputHandler(int choice, HashMap<Integer, ProcedureContainer> procedures) {
         if (!procedures.containsKey(choice)) {
             System.out.println("Operation not found");
             return;
@@ -38,7 +38,7 @@ public class Main {
     }
 
     // Helper method to take parameters for sums
-    private static String[] takeSummationInput() {
+    static String[] takeSummationInput() {
         System.out.print("Enter the lower bound of the sum: ");
         String from = s.nextLine();
         System.out.print("Enter the upper bound of the sum: ");

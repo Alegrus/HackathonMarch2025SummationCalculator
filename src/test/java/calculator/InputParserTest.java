@@ -1,5 +1,4 @@
-package test;
-import main.InputParser;
+package calculator;
 import org.junit.Test;
 
 import java.util.LinkedList;
@@ -31,15 +30,17 @@ public class InputParserTest {
     // Testing parsing of a complex expression
     @Test
     public void complexParsingTest() {
-        Queue<String> result2 = ip.parse("(x^2)/(35*x)");
+        Queue<String> result2 = ip.parse("(x^2)/(3.5*x)-3");
         LinkedList<String> test2 = new LinkedList<>();
         test2.add("x");
         test2.add("2");
         test2.add("^");
-        test2.add("35");
+        test2.add("3.5");
         test2.add("x");
         test2.add("*");
         test2.add("/");
+        test2.add("3");
+        test2.add("-");
         assertEquals(test2, result2);
     }
 
@@ -60,5 +61,6 @@ public class InputParserTest {
     @Test
     public void parenthesesMismatchTest() {
         assertThrows(IllegalArgumentException.class, () -> ip.parse("x)/2"));
+        assertThrows(IllegalArgumentException.class, () -> ip.parse("x(/2"));
     }
 }

@@ -1,4 +1,4 @@
-package main;
+package calculator;
 
 /**
  * Class for containing procedure names and a method

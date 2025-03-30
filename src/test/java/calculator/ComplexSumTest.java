@@ -1,6 +1,5 @@
-package test;
+package calculator;
 
-import main.ComplexSum;
 import org.junit.Test;
 
 import java.util.LinkedList;

@@ -1,6 +1,5 @@
-package test;
+package calculator;
 
-import main.Value;
 import org.junit.Test;
 
 import java.util.LinkedList;
@@ -33,14 +32,14 @@ public class ValueTest {
         LinkedList<String> pol2 = new LinkedList<>();
         pol2.add("x");
         pol2.add("2");
-        pol2.add("^");
+        pol2.add("*");
         pol2.add("3");
         pol2.add("+");
         pol2.add("x");
         pol2.add("2");
         pol2.add("-");
         pol2.add("/");
-        assertEquals(12, v.evaluatePolishNotation(pol2, 3));
+        assertEquals(9, v.evaluatePolishNotation(pol2, 3));
     }
 
     // Testing invalid expression for binary operator

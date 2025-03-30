@@ -19,11 +19,11 @@ Summation Calculator is a Java program that allows users to compute summations b
 2. Clone or download the source code.
 3. Compile the Java files:
    ```sh
-   javac -d bin -sourcepath src src/main/Main.java
+   javac -d bin -sourcepath src src/calculator/Main.java
    ```
 4. Run the program:
    ```sh
-   java -cp bin main.Main
+   java -cp bin calculator.Main
    ```
 
 ## Usage

@@ -1,4 +1,4 @@
-package main;
+package calculator;
 
 import java.util.*;
 
@@ -67,7 +67,7 @@ public class InputParser implements InputParserInterface {
                         output.add(operators.pop());
                     }
 
-                    if (!operators.isEmpty() && operators.peek().equals("(")) {
+                    if (!operators.isEmpty()) {
                         operators.pop();
                     } else {
                         throw new IllegalArgumentException("Mismatched parentheses");

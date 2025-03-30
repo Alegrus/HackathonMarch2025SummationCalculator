@@ -1,4 +1,4 @@
-package main;
+package calculator;
 
 import java.util.Queue;
 

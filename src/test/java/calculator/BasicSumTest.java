@@ -1,6 +1,5 @@
-package test;
+package calculator;
 
-import main.BasicSum;
 import org.junit.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
