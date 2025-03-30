@@ -15,16 +15,7 @@ Summation Calculator is a Java program that allows users to compute summations b
 - Requires generous use of parentheses
 
 ## Installation
-1. Ensure you have Java installed on your system.
-2. Clone or download the source code.
-3. Compile the Java files:
-   ```sh
-   javac -d bin -sourcepath src src/calculator/Main.java
-   ```
-4. Run the program:
-   ```sh
-   java -cp bin calculator.Main
-   ```
+I reccomend going through intellij and following this tutorial: https://www.youtube.com/watch?v=ZqxVJ9gEKo0
 
 ## Usage
 1. Upon running the program, a menu will be displayed with available summation procedures.
